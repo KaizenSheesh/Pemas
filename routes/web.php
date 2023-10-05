@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\PengaduanController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('landing.index');
-});
+Route::get('/', [PengaduanController::class, 'index'])->name('index');
+Route::post('/', [PengaduanController::class, 'create'])->name('create-pengduan');
+
+Route::post('/register', [PengaduanController::class, 'create'])->name('create-pengduan');

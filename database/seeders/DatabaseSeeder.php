@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Category;
 
 class DatabaseSeeder extends Seeder
 {
@@ -18,5 +19,21 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+            Category::create([
+                'name' => 'Kemalingan',
+            ]);
+            Category::create([
+                'name' => 'Bencana Alam',
+            ]);
+            Category::create([
+                'name' => 'Berita Terkini',
+            ]);
+            Category::create([
+                'name' => 'Perlombaan',
+            ]);
+            Category::create([
+                'name' => 'Lainnya',
+            ]);
     }
 }

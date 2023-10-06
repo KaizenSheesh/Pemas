@@ -27,7 +27,7 @@ class PengaduanController extends Controller
             $pegawai->body = $data["body"];
             $pegawai->save();
 
-            return redirect()->back()->with('tambahpengaduan', 'Pengaduan anda berhasil ditambahkan, silahkan tunggu admin acc!');
+            return redirect()->back()->with('tambahPengaduan', 'Pengaduan anda berhasil ditambahkan!');
         }
     }
 }

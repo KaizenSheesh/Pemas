@@ -37,7 +37,7 @@
                         <label class="uk-form-label" for="Judul">Judul Pengaduan</label>
                         <div class="uk-form-controls">
                             <input class="uk-input" id="Judul" name="judul" type="text"
-                                placeholder="Tuliskan Disini!">
+                                placeholder="Tuliskan Disini!" required>
                         </div>
                     </div>
 
@@ -57,7 +57,7 @@
                         <label class="uk-form-label" for="Isi-pengaduan">Judul Pengaduan</label>
                         <div class="uk-form-controls">
                             <textarea class="uk-textarea" name="body" rows="5" id="Isi-pengaduan" placeholder="Tuliskan disini!"
-                                aria-label="Textarea"></textarea>
+                                aria-label="Textarea" required></textarea>
                         </div>
                     </div>
 
